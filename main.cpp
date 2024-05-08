@@ -335,3 +335,12 @@ void Menu::moveUp()
 }
 
 void Menu::moveDown()
+{
+
+    if(selectedItemIndex + 1 < MAX_NUMBER_OF_ITEMS)
+    {
+        menu[selectedItemIndex].setFillColor(Color:: White);
+        selectedItemIndex++;
+        menu[selectedItemIndex].setFillColor(Color:: Cyan);
+    }
+}

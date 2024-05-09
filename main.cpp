@@ -29,7 +29,6 @@ Color M(Color::Magenta);
 Color W(Color::White);
 
 bool field[w][h] = {0};
-// Clase para crear jugadores
 
 class Menu // Clase menu principal
 {
@@ -201,7 +200,7 @@ void juego() // Funcion de juego de tron
 
 void selectorColor()
 {
-    
+     
 }
 
 int main()

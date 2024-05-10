@@ -47,7 +47,7 @@ int main()
     g.setFillColor(Color::White);
     g.setPosition(50-20, 370);
 
-    RenderWindow window(VideoMode(w, h), "VIDEOGAMES");
+    RenderWindow window(VideoMode(w, h), "2 IN 1 VIDEOGAME");
 
     Menu menu(window.getSize().x, window.getSize().y);
 

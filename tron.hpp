@@ -63,6 +63,14 @@ void juego() // Funcion de juego de tron
     RenderWindow window(VideoMode(w, h), "TRON");
     window.setFramerateLimit(60); // FPS MAX 60
 
+    auto image = sf::Image{};
+    if (!image.loadFromFile("tronlogo.png"))
+    {
+    // Error handling...
+    }
+
+    window.setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
+
     Texture texture;
     texture.loadFromFile("background.jpg");
     Sprite sBackground(texture);

@@ -49,6 +49,14 @@ int main()
 
     RenderWindow window(VideoMode(w, h), "2 IN 1 VIDEOGAME");
 
+    auto image = sf::Image{};
+    if (!image.loadFromFile("laformula.jfif"))
+    {
+    // Error handling...
+    }
+
+    window.setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
+
     Menu menu(window.getSize().x, window.getSize().y);
 
     while (window.isOpen())

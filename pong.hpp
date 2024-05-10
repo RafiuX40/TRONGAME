@@ -9,10 +9,21 @@ using namespace sf;
     
 
 void pong()
-{
+{       
+
+    
 
     RenderWindow window(VideoMode(600, 480), "PONG");
     window.setFramerateLimit(60);
+
+    auto image = sf::Image{};
+    if (!image.loadFromFile("pong_logo.jfif"))
+    {
+    // Error handling...
+    }
+
+    window.setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
+
 
     Font font; font.loadFromFile("Warzone.ttf");
     Text text("COMING SOON :D", font, 50);

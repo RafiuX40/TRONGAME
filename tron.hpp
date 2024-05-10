@@ -13,7 +13,7 @@ bool field[w][h] = {0};
 // Colores de jugadores
 
 Color c1(Color::Cyan);
-Color c2(Color::Red);
+Color c2(Color(253,130,6));
 
 class player // Clase para jugadores
 {

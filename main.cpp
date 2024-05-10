@@ -6,28 +6,10 @@ const int h = 480;
 
 #include "menu.hpp"
 #include "tron.hpp"
+#include "pong.hpp"
 
 
 using namespace sf;
-
-
-Color R(Color::Red);
-Color B(Color::Blue);
-Color G(Color::Green);
-Color Y(Color::Yellow);
-Color C(Color::Cyan);
-Color M(Color::Magenta);
-Color W(Color::White);
-
-
-
-
-
-
-void selectorColor()
-{
-     
-}
 
 int main()
 {
@@ -43,11 +25,27 @@ int main()
 
     Text o("O", font, 100);
     o.setFillColor(Color::Cyan);
-    o.setPosition(450, 260);
+    o.setPosition(450-20, 260);
 
     Text n("N", font, 100);
     n.setFillColor(Color::Cyan);
-    n.setPosition(450, 380);
+    n.setPosition(450, 370);
+
+    Text p("P", font, 100);
+    p.setFillColor(Color::White);
+    p.setPosition(50, 15);
+
+    Text O("o", font, 100);
+    O.setFillColor(Color::White);
+    O.setPosition(50-20, 140);
+
+    Text N("N", font, 100);
+    N.setFillColor(Color::White);
+    N.setPosition(50, 260);
+
+    Text g("g", font, 100);
+    g.setFillColor(Color::White);
+    g.setPosition(50-20, 370);
 
     RenderWindow window(VideoMode(w, h), "VIDEOGAMES");
 
@@ -81,6 +79,7 @@ int main()
                         juego();
                         break;
                     case 1:
+                        pong();
                         break;
                     case 2:
                         window.close();
@@ -101,6 +100,10 @@ int main()
         window.draw(r);
         window.draw(o);
         window.draw(n);
+        window.draw(p);
+        window.draw(O);
+        window.draw(N);
+        window.draw(g);
         menu.draw(window);
         window.display();
     }

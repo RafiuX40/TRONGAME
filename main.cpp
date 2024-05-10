@@ -82,9 +82,7 @@ int main()
                     switch (menu.getPressedItem())
                     {
                     case 0:
-                        window.clear();
-
-                        juego();
+                        tron();
                         break;
                     case 1:
                         pong();

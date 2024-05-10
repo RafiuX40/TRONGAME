@@ -57,7 +57,7 @@ public:
 };
 
 
-void juego() // Funcion de juego de tron
+void tron() // Funcion de juego de tron
 {
     srand(time(0));
     RenderWindow window(VideoMode(w, h), "TRON");

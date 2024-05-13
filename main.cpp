@@ -101,7 +101,7 @@ int main()
             }
         }
 
-        window.clear();
+        window.clear(Color(30,30,30));
         window.draw(t);
         window.draw(r);
         window.draw(o);

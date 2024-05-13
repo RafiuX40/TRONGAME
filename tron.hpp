@@ -87,7 +87,7 @@ void tron() // Funcion de juego de tron
     t.draw(sBackground);
 
     Font font;
-    font.loadFromFile("Warzone.ttf");
+    font.loadFromFile("Assets/Warzone.ttf");
 
     Text text("YOU WIN", font, 35);
     text.setPosition(w / 2 - 80, 20);

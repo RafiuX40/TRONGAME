@@ -25,7 +25,7 @@ void pong()
     window.setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
 
 
-    Font font; font.loadFromFile("Warzone.ttf");
+    Font font; font.loadFromFile("Assets/Warzone.ttf");
     Text text("COMING SOON :D", font, 50);
     text.setFillColor(Color(253,130,6));
     text.setPosition(40,200);

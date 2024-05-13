@@ -6,7 +6,7 @@ using namespace sf;
 
 Menu::Menu(float w, float h)
 {
-    if (!font.loadFromFile("Warzone.ttf"))
+    if (!font.loadFromFile("Assets/Warzone.ttf"))
     {
         // handle error
     }

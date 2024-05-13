@@ -14,7 +14,7 @@ using namespace sf;
 int main()
 {
 
-    Font font; font.loadFromFile("Warzone.ttf");
+    Font font; font.loadFromFile("Assets/Warzone.ttf");
     Text t("T", font, 100);
     t.setFillColor(Color::Cyan);
     t.setPosition(450, 15);

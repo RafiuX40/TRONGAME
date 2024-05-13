@@ -50,7 +50,7 @@ int main()
     RenderWindow window(VideoMode(w, h), "2 IN 1 VIDEOGAME");
 
     auto image = sf::Image{};
-    if (!image.loadFromFile("laformula.jfif"))
+    if (!image.loadFromFile("Assets/laformula.jfif"))
     {
     // Error handling...
     }

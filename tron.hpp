@@ -64,7 +64,7 @@ void tron() // Funcion de juego de tron
     window.setFramerateLimit(60); // FPS MAX 75
 
     auto image = sf::Image{};
-    if (!image.loadFromFile("tronlogo.png"))
+    if (!image.loadFromFile("Assets/tronlogo.png"))
     {
     // Error handling...
     }
@@ -72,7 +72,7 @@ void tron() // Funcion de juego de tron
     window.setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
 
     Texture texture;
-    texture.loadFromFile("background.jpg");
+    texture.loadFromFile("Assets/background.jpg");
     Sprite sBackground(texture);
 
     // creacion de jugadores

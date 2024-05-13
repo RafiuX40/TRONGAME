@@ -17,7 +17,7 @@ void pong()
     window.setFramerateLimit(60);
 
     auto image = sf::Image{};
-    if (!image.loadFromFile("pong_logo.jfif"))
+    if (!image.loadFromFile("Assets/pong_logo.jfif"))
     {
     // Error handling...
     }

@@ -4,9 +4,9 @@
 const int w = 600;
 const int h = 480;
 
-#include "menu.hpp"
-#include "tron.hpp"
-#include "pong.hpp"
+#include "Headers/menu.hpp"
+#include "Headers/tron.hpp"
+#include "Headers/pong.hpp"
 
 
 using namespace sf;
@@ -59,7 +59,7 @@ int main()
 
     Menu menu(window.getSize().x, window.getSize().y);
 
-    while (window.isOpen())
+    while (window.isOpen() && !Keyboard::isKeyPressed(Keyboard::Escape))
     {
         Event event;
 
